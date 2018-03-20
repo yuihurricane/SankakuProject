@@ -22,22 +22,14 @@ body {
 
 
 nav {
-  /*border: 2px solid red;*/
   height: 138px;
   background-color: rgb(35, 35, 35);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  /* align-items: center; */
 }
 /******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
+/**************HAMBURGER BLOCK*****************************/
 .hamburger {
   display: none;
 }
@@ -88,16 +80,8 @@ nav {
   display: flex;
   flex-flow: column;
   justify-content:space-around;
-  animation: ani-ani 2s 0s ease;
 }
-/* @keyframes ani-ani {
-  0% {
-    transform:
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-} */
+
 .hamburger:not(:checked) + .navigation {
   visibility: hidden;
   opacity: 0;
@@ -105,15 +89,8 @@ nav {
 }
 
 /******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
+/******************************NAVIGATION BLOCK********************************/
 .logo {
-  /*border: 2px solid red;*/
   width: 488px;
   background-image: url("LOGO.jpg");
   background-size: cover;
@@ -121,13 +98,11 @@ nav {
 
 .navigation-list {
   background-color: rgb(35, 35, 35);
-  /*border: 2px solid red;*/
   width: 700px;
 }
 
 .navigation-list ul {
   list-style-type: none;
-  /*border: 2px solid red;*/
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
@@ -136,7 +111,6 @@ nav {
 
 .navigation li {
   display: flex;
-  /*border: 2px solid red;*/
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   color: rgb(251, 240, 248);
@@ -194,26 +168,19 @@ li .search-box:checked ~ .space-search-box {
 li .arrowbottom {
   background-image: url("arrowbottom1.jpg");
   background-size: cover;
-  /*border: 2px solid red;*/
   width: 30px;
 }
 
 .arrowbottom:hover {
   background-image: url("arrowbottom2.jpg");
-  background-size: cover;
   transition: 0.3s;
 }
 .arrowbottom:not(:hover) {
   background-image: url("arrowbottom1.jpg");
-  background-size: cover;
   transition: 0.5s;
 }
-
 /*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
+/*-----------------SUBMENU BLOCK-------------------------*/
 
 ul.submenu {
   opacity: 0;
@@ -223,11 +190,9 @@ ul.submenu {
   position: absolute;
   width: 115px;
   z-index: 2;
-  /*border: 2px solid red;*/
 }
 
 ul.submenu > li {
-  width: 100%;
   display:block;
 }
 
@@ -238,7 +203,6 @@ ul.submenu > li > a {
   color: white;
   background-color: rgb(35, 35, 35);
   text-decoration: none;
-  width: 100%;
   font-size: 15px;
   letter-spacing: 1px;
   font-family: "Mina", sans-serif;
@@ -269,20 +233,13 @@ ul.submenu > li > a:hover {
   visibility: hidden;
   transition: 1s;
 }
-
 /*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-
-
+/*------------------------------SLIDER-CHANGE BLOCk-------------------------*/
 .slider-holder {
   z-index: 1;
   margin-top: 20px;
   text-align: left;
   overflow: hidden;
-  /*border: 3px outset rgb(255, 116, 29);*/
   width: 50%;
   height: 350px;
   margin-right: auto;
@@ -305,7 +262,6 @@ ul.submenu > li > a:hover {
   background-size: cover;
 }
 .image-holder  a {
-  /*border: 3px solid blue;*/
   padding-left: 3%;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
@@ -342,15 +298,12 @@ ul.submenu > li > a:hover {
 .slider-image5 {
   background-image: url("sliders/slider5.jpg")
 }
-
 #slider-image-1:target ~ .image-holder {
   left: 0px;
 }
-
 #slider-image-2:target ~ .image-holder {
   left: -100%;
 }
-
 #slider-image-3:target ~ .image-holder {
   left: -200%;
 }
@@ -364,7 +317,6 @@ ul.submenu > li > a:hover {
 .button-holder {
   position: relative;
   bottom: 10%;
-  /*border: 3px solid red;*/
   height: 10%;
 }
 
@@ -382,21 +334,16 @@ ul.submenu > li > a:hover {
     transition: 0.5s;
   }
 /*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
+/*---------------------------RECENT POSTS CONTAINER----------------------------------*/
 .recent-posts-container {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 20px;
-  /*border: 2px solid yellow;*/
   height: 800px;
 }
 .recent-posts-container > .header {
   text-align: center;
   height: 60px;
-  /*border: 2px solid red;*/
   padding-top: 8px;
   background-color: rgb(63, 54, 49);
 }
@@ -408,7 +355,6 @@ ul.submenu > li > a:hover {
 }
 
 .recent-posts {
-  /*border: 3px solid purple;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -418,7 +364,6 @@ ul.submenu > li > a:hover {
 }
 .recent-posts > article {
   width: 45%;
-  /*border: 2px solid black;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -427,127 +372,96 @@ ul.submenu > li > a:hover {
 .recent-posts > .left-side > .post {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  /*border: 2px solid blue;*/
   height: 21%;
   background-color: white;
 }
-
 .recent-posts > .right-side > .post {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  /*border: 2px solid blue;*/
   height: 21%;
   background-color: white;
 }
 .recent-posts > .left-side > .post > a {
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
   background-size:cover;
 }
 .recent-posts > .left-side > .post > a > .image1, .image2, .image3, .image4 {
   height: 100%;
   width: 100%;
-  /*border: 2px solid aqua;*/
   background-size:cover;
 }
 .recent-posts > .left-side > .post > a .image1 {
   background-image: url("recent-news/1.jpg");
-  background-size: cover;
 }
 .recent-posts > .left-side > .post > a .image1:hover {
   background-image: url("recent-news/1trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 
 .recent-posts > .left-side > .post > a > .image2 {
   background-image: url("recent-news/2.jpg");
-  background-size: cover;
 }
 .recent-posts > .left-side > .post > a > .image2:hover {
   background-image: url("recent-news/2trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .recent-posts > .left-side > .post > a > .image3 {
   background-image: url("recent-news/3.jpg");
-  background-size: cover;
 }
 .recent-posts > .left-side > .post > a > .image3:hover {
   background-image: url("recent-news/3trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .recent-posts > .left-side > .post > a > .image4 {
   background-image: url("recent-news/4.jpg");
-  background-size: cover;
 }
 .recent-posts > .left-side > .post > a > .image4:hover {
   background-image: url("recent-news/4trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 
 .recent-posts > .left-side > .post > .news1, .news2, .news3, .news4 {
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
   background-color: white;
 }
 .recent-posts > .right-side > .post > a  {
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
 }
 .recent-posts > .right-side > .post > a > .image5, .image6, .image7, .image8 {
   height: 100%;
-  width: 100%;
-  /*border: 2px solid aqua;*/
+  background-size: cover;
 }
 .recent-posts > .right-side > .post > a > .image5 {
   background-image: url("recent-news/5.jpg");
-  background-size: cover;
 }
 .recent-posts > .right-side > .post > a > .image5:hover {
   background-image: url("recent-news/5trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .recent-posts > .right-side > .post > a > .image6 {
   background-image: url("recent-news/6.jpg");
-  background-size: cover;
 }
 .recent-posts > .right-side > .post > a > .image6:hover {
   background-image: url("recent-news/6trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .recent-posts > .right-side > .post > a > .image7 {
   background-image: url("recent-news/7.jpg");
-  background-size: cover;
 }
 .recent-posts > .right-side > .post > a > .image7:hover {
   background-image: url("recent-news/7trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .recent-posts > .right-side > .post > a > .image8 {
   background-image: url("recent-news/8.jpg");
-  background-size: cover;
 }
 .recent-posts > .right-side > .post > a > .image8:hover {
   background-image: url("recent-news/8trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 
 .recent-posts > .right-side > .post > .news5, .news6, .news7, .news8 {
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
   background-color: white;
 }
 
@@ -572,7 +486,6 @@ ul.submenu > li > a:hover {
   transition: 0.5s;
 }
 .post div p {
-  display: inline-block;
   margin-left:5%;
   margin-right:5%;
   margin-top: 5%;
@@ -591,7 +504,6 @@ ul.submenu > li > a:hover {
 .recent-posts-container > .footer {
   text-align: center;
   height: 60px;
-  /*border: 2px solid red;*/
   padding-top: 8px;
   background-color: rgb(249, 249, 249);
 }
@@ -606,24 +518,18 @@ ul.submenu > li > a:hover {
   text-decoration: underline;
   color: rgb(185, 183, 186);
 }
-
 /*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
+/*---------------------------------POPULAR POSTS CONTAINER-------------------------*/
 
 .popular-posts-container {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 20px;
-  /*border: 2px solid yellow;*/
   height: 800px;
 }
 .popular-posts-container > .header {
   text-align: center;
   height: 60px;
-  /*border: 2px solid red;*/
   padding-top: 8px;
   background-color: rgb(63, 54, 49);
 }
@@ -635,7 +541,6 @@ ul.submenu > li > a:hover {
 }
 
 .popular-posts {
-  /*border: 3px solid purple;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -645,7 +550,6 @@ ul.submenu > li > a:hover {
 }
 .popular-posts > article {
   width: 45%;
-  /*border: 2px solid black;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -654,8 +558,6 @@ ul.submenu > li > a:hover {
 .popular-posts > .left-side > .post {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  /*border: 2px solid blue;*/
   height: 21%;
   background-color: white;
 }
@@ -663,129 +565,94 @@ ul.submenu > li > a:hover {
 .popular-posts > .right-side > .post {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  /*border: 2px solid blue;*/
   height: 21%;
   background-color: white;
 }
 .popular-posts > .left-side > .post > a {
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
   background-size:cover;
 }
 .popular-posts > .left-side > .post > a > .image1, .image2, .image3, .image4 {
   height: 100%;
-  width: 100%;
-  /*border: 2px solid aqua;*/
   background-size:cover;
 }
 .popular-posts > .left-side > .post > a .image1 {
   background-image: url("popular-posts/1.jpg");
-  background-size: cover;
 }
 .popular-posts > .left-side > .post > a .image1:hover {
   background-image: url("popular-posts/1trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .popular-posts > .left-side > .post > a > .image2 {
   background-image: url("popular-posts/2.jpg");
-  background-size: cover;
 }
 .popular-posts > .left-side > .post > a > .image2:hover {
   background-image: url("popular-posts/2trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .popular-posts > .left-side > .post > a > .image3 {
   background-image: url("popular-posts/3.jpg");
-  background-size: cover;
 }
 .popular-posts > .left-side > .post > a > .image3:hover {
   background-image: url("popular-posts/3trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .popular-posts > .left-side > .post > a > .image4 {
   background-image: url("popular-posts/4.jpg");
-  background-size: cover;
 }
 .popular-posts > .left-side > .post > a > .image4:hover {
   background-image: url("popular-posts/4trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 
 .popular-posts > .left-side > .post > .news1, .news2, .news3, .news4 {
-  box-sizing: border-box;
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
   background-color: white;
 }
 .popular-posts > .right-side > .post > a  {
-  box-sizing: border-box;
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
 }
 .popular-posts > .right-side > .post > a > .image5, .image6, .image7, .image8 {
-  box-sizing: border-box;
   height: 100%;
-  width: 100%;
-  /*border: 2px solid aqua;*/
+  background-size: cover;
 }
 .popular-posts > .right-side > .post > a > .image5 {
   background-image: url("popular-posts/5.jpg");
-  background-size: cover;
 }
 .popular-posts > .right-side > .post > a > .image5:hover {
   background-image: url("popular-posts/5trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .popular-posts > .right-side > .post > a > .image6 {
   background-image: url("popular-posts/6.jpg");
-  background-size: cover;
 }
 .popular-posts > .right-side > .post > a > .image6:hover {
   background-image: url("popular-posts/6trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .popular-posts > .right-side > .post > a > .image7 {
   background-image: url("popular-posts/7.jpg");
-  background-size: cover;
 }
 .popular-posts > .right-side > .post > a > .image7:hover {
   background-image: url("popular-posts/7trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 .popular-posts > .right-side > .post > a > .image8 {
   background-image: url("popular-posts/8.jpg");
-  background-size: cover;
 }
 .popular-posts > .right-side > .post > a > .image8:hover {
   background-image: url("popular-posts/8trans.jpg");
-  background-size: cover;
   transition: 1s;
 }
 
 .popular-posts > .right-side > .post > .news5, .news6, .news7, .news8 {
-  height: 100%;
   width: 50%;
-  /*border: 2px solid aqua;*/
   background-color: white;
 }
-
 .post-time {
   float:left;
 }
-
 .post div a {
-  display: block;
   margin-left:5%;
   margin-right:5%;
   margin-top: 5%;
@@ -801,7 +668,6 @@ ul.submenu > li > a:hover {
   transition: 0.5s;
 }
 .post div p {
-  display: inline-block;
   margin-left:5%;
   margin-right:5%;
   margin-top: 5%;
@@ -820,7 +686,6 @@ ul.submenu > li > a:hover {
 .popular-posts-container > .footer {
   text-align: center;
   height: 60px;
-  /*border: 2px solid red;*/
   padding-top: 8px;
   background-color: rgb(249, 249, 249);
 }
@@ -835,30 +700,19 @@ ul.submenu > li > a:hover {
   text-decoration: underline;
   color: rgb(185, 183, 186);
 }
-
 /*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
+/*------------------------------CHAN POSTS CONTAINER---------------------------------*/
 
 .chan-posts-container {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 20px;
-  /*border: 2px solid yellow;*/
   height: 400px;
-  overflow: hidden;                   /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  overflow: hidden;
 }
 .chan-posts-container > .header {
   text-align: center;
   height: 15%;
-  /*border: 2px solid red;*/
   padding-top: 8px;
   background-color: rgb(63, 54, 49);
 }
@@ -882,7 +736,6 @@ ul.submenu > li > a:hover {
 }
 .chan-posts-container > .swf {
   height: 15%;
-  /*border: 3px solid white;*/
   text-align: center;
   font-family: "Oswald", sans-serif;
   color: rgb(185, 183, 186);
@@ -893,20 +746,8 @@ ul.submenu > li > a:hover {
 
 .chan-posts-container > .tape {
   height:55%;
-  /*border: 3px solid blue;*/
   width: 200%;
 }
-/*.chan-posts-container > .tape > .tape2 {
-  box-sizing: border-box;
-  border: 5px solid aqua;
-  width: 100%;
-  height: 100%;
-  background-color: aqua;
-  visibility: visible;
-  position: relative;
-  overflow: visible;
-  z-index: 10;
-}*/
 
 @keyframes tapego {
   0% {
@@ -921,84 +762,64 @@ ul.submenu > li > a:hover {
   float: left;
   height: 100%;
   width: 8%;
-  /*border: 2px solid pink;*/
   animation: tapego 15s 0s infinite linear alternate;
   position: relative;
   background-size: cover;
   border-radius: 20px;
 }
-
-
 .chan-posts-container > .swf:hover + .tape > a > div {
     animation-name: tapego;
     animation-play-state: paused;
 }
 .chan-posts-container > .tape > a > .tape-item1 {
   background-image: url("chan-posts/1.jpg");
-
 }
 .chan-posts-container > .tape > a > .tape-item2 {
   background-image: url("chan-posts/2.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item3 {
   background-image: url("chan-posts/3.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item4 {
   background-image: url("chan-posts/4.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item5 {
   background-image: url("chan-posts/5.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item6 {
   background-image: url("chan-posts/6.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item7 {
   background-image: url("chan-posts/7.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item8 {
   background-image: url("chan-posts/8.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item9 {
   background-image: url("chan-posts/9.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item10 {
   background-image: url("chan-posts/10.jpg");
-  background-size: cover;
 }
 .chan-posts-container > .tape > a > .tape-item11 {
   background-image: url("chan-posts/11.jpg");
-  background-size: cover;
 }
 
 .chan-posts-container > .chan-search {
   height:15%;
   width: 100%;
-  /*border: 5px solid red;*/
 }
 .chan-posts-container > .chan-search > .container-search {
   height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-  /*border: 5px solid black;*/
 }
 .container-search input#search {
-  width: 40%;
   height: 100%;
+  width: 40%;
   background: #2b303b;
   border: none;
   font-size: 22px;
   float: left;
-  color: rgb(249, 120, 36);/*#63717f*/;
+  color: rgb(249, 120, 36);
   padding-left: 5%;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -1017,27 +838,17 @@ ul.submenu > li > a:hover {
   width: 100%;
 }
 /*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
+/*------------------------------IDOL POSTS CONTAINER---------------------------------*/
 .idol-posts-container {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 20px;
-  /*border: 2px solid yellow;*/
   height: 400px;
-  overflow: hidden;                   /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  overflow: hidden;
 }
 .idol-posts-container > .header {
   text-align: center;
   height: 15%;
-  /*border: 2px solid red;*/
   padding-top: 8px;
   background-color: rgb(63, 54, 49);
 }
@@ -1058,7 +869,6 @@ ul.submenu > li > a:hover {
 
 .idol-posts-container > .swf {
   height: 15%;
-  /*border: 3px solid white;*/
   text-align: center;
   font-family: "Oswald", sans-serif;
   color: rgb(185, 183, 186);
@@ -1069,7 +879,6 @@ ul.submenu > li > a:hover {
 
 .idol-posts-container > .tape {
   height:55%;
-  /*border: 3px solid blue;*/
   width: 200%;
 }
 @keyframes tapegoidol {
@@ -1085,7 +894,6 @@ ul.submenu > li > a:hover {
   float: left;
   height: 100%;
   width: 8%;
-  /*border: 2px solid pink;*/
   animation: tapegoidol 15s 0s infinite linear alternate;
   position: relative;
   background-size: cover;
@@ -1099,86 +907,43 @@ ul.submenu > li > a:hover {
 }
 .idol-posts-container > .tape > a > .tape-item1 {
   background-image: url("idol-posts/1.jpg");
-
 }
 .idol-posts-container > .tape > a > .tape-item2 {
   background-image: url("idol-posts/2.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item3 {
   background-image: url("idol-posts/3.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item4 {
   background-image: url("idol-posts/4.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item5 {
   background-image: url("idol-posts/5.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item6 {
   background-image: url("idol-posts/6.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item7 {
   background-image: url("idol-posts/7.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item8 {
   background-image: url("idol-posts/8.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item9 {
   background-image: url("idol-posts/9.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item10 {
   background-image: url("idol-posts/10.jpg");
-  background-size: cover;
 }
 .idol-posts-container > .tape > a > .tape-item11 {
   background-image: url("idol-posts/11.jpg");
-  background-size: cover;
 }
-
 .idol-posts-container > .idol-search {
   height:15%;
   width: 100%;
-  /*border: 5px solid red;*/
 }
 .idol-posts-container > .idol-search > .container-search {
   height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-  /*border: 5px solid black;*/
-}
-.container-search input#search {
-  width: 40%;
-  height: 100%;
-  background: #2b303b;
-  border: none;
-  font-size: 22px;
-  float: left;
-  color: rgb(249, 120, 36);/*#63717f*/;
-  padding-left: 5%;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  font-family: "Oswald", sans-serif;
-  outline: none;
-  -webkit-transition: width .55s ease;
- -moz-transition: width .55s ease;
- -ms-transition: width .55s ease;
- -o-transition: width .55s ease;
- transition: width 0.55s ease;
-}
-
-.container-search input#search:hover, .container-search input#search:focus,
-.container-search input#search:active {
-  width: 100%;
 }
 
 footer {
@@ -1195,26 +960,16 @@ footer {
 }
 
 /*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
-/*-------------------------------------------------------------------*/
+/*--------------------------------------RESPONSIVE--------------------------*/
 @media screen and (min-device-width: 0px) and (max-device-width: 500px){
   nav {
     justify-content: space-between;
   }
-
   .slider-holder {
     margin-top: 20px;
     text-align: left;
     overflow: hidden;
     box-sizing: border-box;
-    /*border: 3px outset rgb(255, 116, 29);*/
     width: 80%;
     height: 450px;
     margin-right: auto;
